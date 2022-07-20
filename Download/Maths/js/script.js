@@ -1,30 +1,30 @@
 console.log("Hello");
 
-// disable right click
-document.addEventListener('contextmenu', event => event.preventDefault());
+// // disable right click
+// document.addEventListener('contextmenu', event => event.preventDefault());
  
-document.onkeydown = function (e) {
+// document.onkeydown = function (e) {
  
-    // disable F12 key
-    if(e.keyCode == 123) {
-        return false;
-    }
+//     // disable F12 key
+//     if(e.keyCode == 123) {
+//         return false;
+//     }
  
-    // disable I key
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
-        return false;
-    }
+//     // disable I key
+//     if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+//         return false;
+//     }
  
-    // disable J key
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-        return false;
-    }
+//     // disable J key
+//     if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+//         return false;
+//     }
  
-    // disable U key
-    if(e.ctrlKey && e.keyCode == 85) {
-        return false;
-    }
-}
+//     // disable U key
+//     if(e.ctrlKey && e.keyCode == 85) {
+//         return false;
+//     }
+// }
 
 const headerHeight = document.querySelector("header").offsetHeight;
 const idHeader = document.querySelector("#header");
@@ -69,67 +69,71 @@ function scrollFunction() {
   }
 }
 
-//Collection of materials
+//----------------------------Collection of materials---------------------------------------------//
 
+  // let notes = [];
+  // elementObject = {};
 
-  let notes = [{
-    moduleNo : "1",
-    moduleName  : "Module1",
-    moduleLink     : "youtube.com",
-  },
-    {
-    moduleNo : "2",
-    moduleName  : "Module2",
-    moduleLink     : "youtube.com",
-  },
-    {
-    moduleNo : "3",
-    moduleName  : "Module3",
-    moduleLink     : "youtube.com",
-  },{
-    moduleNo: "5",
-      moduleName: "Probabiliy",
-      moduleLink: "youtube.com"
-  }];
-  for( i=0 ; i<notes.length ; i++){
-    var no = document.createTextNode("Module "+notes[i].moduleNo);
-    var Name = document.createTextNode(notes[i].moduleName);
-    var link = document.createTextNode("Download");
-    var content = document.createElement("div");
-    content.classList.add("content");
-
-    
-    var tag1 = document.createElement("h4");
-    var tag2 = document.createElement("h4"); 
-    var tag3 = document.createElement("h4"); 
-
-    tag1.classList.add("no");
-    tag2.classList.add("name");
-    tag3.classList.add("link");
-
-    var url = document.createElement("a");
-    url.href = "youtube.com";
+  
+//   let notes = [{
+//     moduleNo : "1",
+//     moduleName  : "Module1",
+//     moduleLink     : "youtube.com",
+//   },
+//     {
+//     moduleNo : "2",
+//     moduleName  : "Module2",
+//     moduleLink     : "youtube.com",
+//   },
+//     {
+//     moduleNo : "3",
+//     moduleName  : "Module3",
+//     moduleLink     : "youtube.com",
+//   },{
+//     moduleNo: "5",
+//       moduleName: "Probabiliy",
+//       moduleLink: "youtube.com"
+//   }];
+//   console.log(notes);
+//   for(var i=0 ; i<notes.length ; i++){
+//     var no = document.createTextNode("Module "+notes[i].moduleNo);
+//     var Name = document.createTextNode(notes[i].moduleName);
+//     var link = document.createTextNode("Download");
+//     var content = document.createElement("div");
+//     content.classList.add("content");
 
     
-    tag1.appendChild(no);
-    tag2.appendChild(Name);
-    url.appendChild(link);
-    tag3.appendChild(url);
-    
-    content.append(tag1, tag2, tag3);
+//     var tag1 = document.createElement("h4");
+//     var tag2 = document.createElement("h4"); 
+//     var tag3 = document.createElement("h4"); 
 
-    var element = document.getElementById("notes");
-    element.appendChild(content);
+//     tag1.classList.add("no");
+//     tag2.classList.add("name");
+//     tag3.classList.add("link");
+
+//     var url = document.createElement("a");
+//     url.href = "youtube.com";
+
+    
+//     tag1.appendChild(no);
+//     tag2.appendChild(Name);
+//     url.appendChild(link);
+//     tag3.appendChild(url);
+    
+//     content.append(tag1, tag2, tag3);
+
+//     var element = document.getElementById("notes");
+//     element.appendChild(content);
     
 
 
     
-     // var tag = document.createElement("p");
-     // var text = document.createTextNode(notes[i].moduleNo + " " + notes[i].moduleName + " " + notes[i].moduleLink);
-     // tag.appendChild(text);
-     // var element = document.getElementById("note");
-     // element.appendChild(tag);
-}
+//      // var tag = document.createElement("p");
+//      // var text = document.createTextNode(notes[i].moduleNo + " " + notes[i].moduleName + " " + notes[i].moduleLink);
+//      // tag.appendChild(text);
+//      // var element = document.getElementById("note");
+//      // element.appendChild(tag);
+// }
 
 
 

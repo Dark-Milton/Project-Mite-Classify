@@ -276,7 +276,19 @@ header{
   width:100px;
   color: var(--clr-neutral-100)
 }
-
+#noteslistHeader,
+#notescomingsoon,
+#textbklistHeader,
+#textbkcomingsoon,
+#pptslistHeader,
+#pptscomingsoon{
+  display: none;
+}
+#notesloading,
+#textbkloading,
+#pptsloading{
+  display: block;
+}
 #notes, #textbooks, #ppt{
   display: grid;
   place-items: center;
